@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: rgb(22, 22, 22);
+    display: flex;
+
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.profile h2{
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.imag-box {
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px white solid;
+    flex-shrink: 0;
+}
+.imag-box img{
+    width: 100%;
+   
+   
+}
+.menu{
+    height: 100vh;
+    width: 100px;
+    background-color: rgb(42, 48, 46);
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul {
+    list-style: none;
+    position: relative;
+    height: 95vh;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+
+    padding: 10px;
+    margin:10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.8s;
+}
+ul li a:hover{
+    background-color: rgba(230, 236, 234, 0.342);
+}
+ul li .active{
+    background-color: rgba(230, 236, 234, 0.342);
+}
+ul .log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+ul .log-out a{
+    background-color: #a00;
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+}
+.content .title{
+    background-image: linear-gradient(to right , rgb(56, 61, 60), rgb(104, 81, 81),rgb(161, 126, 126), rgb(105, 80, 80),rgb(42, 48, 46));
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.content .title p{
+    font-size: 20px;
+}
+.content .title i{
+    font-size: 20px;
+}
+.datainfo{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    align-items: center;
+    gap: 10px;
+    
+}
+.datainfo .box{
+    background-color: rgb(42, 48, 46);
+    flex-basis: 150px;
+height: 150px;
+flex-grow: 1;
+margin: 10px;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+.datainfo .box:hover{
+    background-image: linear-gradient(to right , rgb(98, 107, 105), rgb(122, 100, 100),rgba(124, 106, 106, 0.74), rgb(136, 107, 107),rgb(42, 48, 46));
+background-repeat: no-repeat;
+background-size: cover;
+}
+.datainfo .box i{
+    font-size: 40px;
+}
+.datainfo .box .data {
+    text-align: center;
+}
+.datainfo .box .data p{
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.datainfo .box .data span{
+    font-size: 40px;
+}
+table , thead{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+ thead td{
+    background-color: rgba(230, 236, 234, 0.342) ;
+    height: 60px;
+}
+tr , td{
+    background-color:rgb(42, 48, 46) ;
+    height: 40px;
+    border-radius: 8px;
+    }
+    td:hover, tr:hover{
+        background-image: linear-gradient(to right , rgb(98, 107, 105), rgb(122, 100, 100),rgba(124, 106, 106, 0.74), rgb(136, 107, 107),rgb(42, 48, 46));
+
+    }
